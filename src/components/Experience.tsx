@@ -28,7 +28,7 @@ const experiences: Experience[] = [
     logo: zeropoint,
     location: "Colombo, Sri Lanka",
     position: "Associate Software Engineer",
-    duration: "JJanuary 2023 - September 2024",
+    duration: "January 2023 - September 2024",
     description:
       "I worked as an Associate Software Developer at Zeropoint for 1 year and 8 months. During my tenure, I was involved in modeling, code generation, UI design, API connectivity, and server implementation. I utilized technologies such as React.js, MongoDB, Node.js, Express.js, and the VS Code platform. My role primarily focused on providing internal framework support for the Zeropoint application.",
   },
@@ -41,7 +41,7 @@ const experiences: Experience[] = [
     description:
       "I was employed as a Trainee Software Developer at Zeropoint for one year. During my tenure, I developed modeling, code generation, middleware, and server implementations using technologies such as React.js, SQL, Node.js, Express.js, and the VS Code platform. My role focused on providing internal framework support for the Zeropoint application.",
   },
-  
+
 ];
 
 const groupByCompany = (experiences: Experience[]): Record<string, Experience[]> => {
@@ -97,12 +97,15 @@ export function Experience() {
                     </div>
 
                     <div className="flex-1 p-3 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                      <span className="absolute top-2 right-2 text-xs text-gray-700 font-medium">
-                        {role.duration}
-                      </span>
-                      <Badge className="text-gray-900 rounded-full text-sm">
-                        {role.position}
-                      </Badge>
+                      <div className="flex flex-col sm:flex-row sm:justify-between items-start sm:items-center">
+                        <Badge className="mt-2 sm:mt-0 text-gray-900 rounded-full text-sm">
+                          {role.position}
+                        </Badge>
+                        <span className="text-xs ms-2 sm:text-sm text-gray-700 font-medium">
+                          {role.duration}
+                        </span>
+
+                      </div>
                       <p className="mt-3 ms-2 text-gray-700 leading-relaxed">{role.description}</p>
                     </div>
                   </div>
