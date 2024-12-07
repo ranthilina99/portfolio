@@ -2,7 +2,7 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 export function Footer() {
   return (
-    <footer className="relative bg-gradient-to-r from-blue-600 to-blue-800 py-8">
+    <footer className="relative bg-gradient-to-r from-gray-600 to-gray-800 py-8">
       {/* Background Overlay */}
       <div className="absolute inset-0 bg-black opacity-50" />
       
