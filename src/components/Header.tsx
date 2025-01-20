@@ -45,7 +45,7 @@ export function Header() {
             >
               <FaDownload size={20} /> {/* Beautiful download icon */}
               Download CV
-            {/* </a> */} */}
+            {/* </a> */} 
           </div>
         </div>
       </div>
