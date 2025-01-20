@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Profile from "../assets/profile-img.jpg";
 import Background from "../assets/hero-bg-new.jpg";
+import { FaDownload } from "react-icons/fa";
 
 export function Header() {
   return (
@@ -29,13 +30,23 @@ export function Header() {
           />
         </div>
         <div>
-          <h1 className="text-2xl md:mt-36 sm:mt-36 sm:text-3xl md:text-4xl font-bold text-gray-900">
+          <h1 className="text-2xl md:mt-48 sm:mt-48 sm:text-3xl md:text-4xl font-bold text-gray-900">
             Umesh Ranthilina
           </h1>
           <p className="text-lg sm:text-xl text-gray-900 mt-2">
             Full-Stack Software Engineer at Zeropoint
           </p>
-          
+
+          <div className="mt-18 w-full flex justify-center sm:justify-start">
+            {/* <a
+              href="/path-to-your-cv.pdf"
+              download
+              className="bg-gradient-to-r from-red-600 to-blue-600 text-white text-sm sm:text-lg font-semibold py-2 px-6 rounded-full shadow-xl hover:scale-105 transform transition-all duration-300 flex items-center gap-3"
+            >
+              <FaDownload size={20} /> {/* Beautiful download icon */}
+              Download CV
+            {/* </a> */} */}
+          </div>
         </div>
       </div>
     </header>
